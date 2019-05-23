@@ -14,11 +14,12 @@ const TWEET = {
   },
   tweet: {
     text: 'lsjdhjgj gdfgdfg gdfgdfg dfgfd',
-    time: +new Date,
+    time: 1558425005922,
   }
 }
 
-const getTweetMarkup = (tweet) => `<${TWEET_COMPONENT} 
+const getTweetMarkup = (tweet) => `
+<${TWEET_COMPONENT} 
   tweet='${JSON.stringify(tweet)}'
 ></${TWEET_COMPONENT}>`;
 
