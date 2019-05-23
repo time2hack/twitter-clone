@@ -1,3 +1,12 @@
-module.exports = (name, eventData, bubbles = true, cancelable = true) => {
-  return new CustomEvent(name, { detail: eventData, bubbles, cancelable });
-}
+module.exports = (
+  name,
+  eventData,
+  bubbles = true,
+  cancelable = true,
+) => new CustomEvent(
+  name, {
+    detail: eventData,
+    bubbles,
+    cancelable
+  }
+);
